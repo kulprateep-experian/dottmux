@@ -1,7 +1,9 @@
 tmux new-session \; \
-  send-keys 'vim ../../mygem/jinda/lib/jinda/helpers.rb' C-m \; \
+  set -g base-index 1 \; \
+  setw -g pane-base-index 1 \; \
+  send-keys 'vim' C-m \; \
   split-window -h  -p 65 \; \
-  send-keys 'vim main.rb' C-m \; \
+  send-keys 'vim' C-m \; \
   split-window -h -p 50 \; \
   select-pane -t 3 \; \
   split-window -v \; \
