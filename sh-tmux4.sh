@@ -1,4 +1,3 @@
-tmux new-session \; \
   set -g base-index 1 \; \
   setw -g pane-base-index 1 \; \
   send-keys 'vim' C-m \; \
